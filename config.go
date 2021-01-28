@@ -35,6 +35,13 @@ func String(name string, value string, usage string) *string {
 func Bool(name string, value bool, usage string) *bool {
 	return flag.Bool(name, value, usage)
 }
+func Int(name string, value int, usage string) *int {
+	return flag.Int(name, value, usage)
+}
+
+func Uint16(name string, value uint16, usage string) *uint16 {
+	return flag.Uint16(name, value, usage)
+}
 
 func Duration(name string, value time.Duration, usage string) *time.Duration {
 	return flag.Duration(name, value, usage)
