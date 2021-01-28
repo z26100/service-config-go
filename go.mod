@@ -1,0 +1,1 @@
+module "github.com/z26100/service-config-go"
