@@ -1,4 +1,4 @@
-package config
+package service_config_go
 
 import (
 	flag "github.com/spf13/pflag"
