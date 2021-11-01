@@ -1,7 +1,7 @@
 package service_config_go
 
 import (
-	flag "github.com/spf13/pflag"
+	flag "github.com/namsral/flag"
 	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"log"
@@ -39,8 +39,8 @@ func Int(name string, value int, usage string) *int {
 	return flag.Int(name, value, usage)
 }
 
-func Uint16(name string, value uint16, usage string) *uint16 {
-	return flag.Uint16(name, value, usage)
+func Uint(name string, value uint, usage string) *uint {
+	return flag.Uint(name, value, usage)
 }
 
 func Duration(name string, value time.Duration, usage string) *time.Duration {
